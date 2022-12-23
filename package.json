@@ -41,5 +41,8 @@
       "last 1 safari version"
     ]
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@dagger.io/dagger": "^0.3.0"
+  }
 }
