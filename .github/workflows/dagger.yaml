@@ -8,8 +8,8 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     env:
-      DAGGER_CACHE_FROM: type=gha,scope=dagger-cache-example
-      DAGGER_CACHE_TO: type=gha,mode=max,scope=dagger-cache-example
+      DAGGER_CACHE_FROM: type=gha,scope=dagger-cache-example,src=/tmp/.buildx-cache
+      DAGGER_CACHE_TO: type=gha,mode=max,scope=dagger-cache-example,dest=/tmp/.buildx-cache-new
     steps:
       - uses: actions/setup-node@v3
         with:
